@@ -8,7 +8,6 @@ div.da{
 	display: inline-block;
 }
 
-
 div.tecno{
   margin-top: 50px;
   border: 1px solid #ccc;
@@ -25,20 +24,11 @@ div.tecno{
     font-size: 14px;
     margin: 5px;
     padding: 4px 7px;
-    background: #fff;
+    background: #D6D6D6;
     display: inline-block;
     cursor: pointer;
     border-radius: 3px;
     text-align: center;
-    width: 100%;
-}
-.owl-next, .owl-prev {
-    background-color: #005b82;
-    display: inline-block;
-    margin: 5px auto;
-    height: 25px;
-    width: 100px;
-    border-radius: 50px;
 }
 .item1 {
   position: relative;

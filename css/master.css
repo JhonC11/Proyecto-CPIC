@@ -24,11 +24,12 @@ div.tecno{
     font-size: 14px;
     margin: 5px;
     padding: 4px 7px;
-    background: #D6D6D6;
+    background: #fff;
     display: inline-block;
     cursor: pointer;
     border-radius: 3px;
     text-align: center;
+    width: 100%;
 }
 .owl-next, .owl-prev {
     background-color: #005b82;

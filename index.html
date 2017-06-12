@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/master.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+</head>
+<body>
+	<!-- navbar -->
+	<nav class="navbar navbar-default navbar-static-top">
+	    <div class="da">
+	    	<img src="imgs/encabe.png" alt="">
+	    </div>
+	    <div class="da">
+	    	<div class="dropdown da">
+			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+			    Programa de formación
+			    <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+			    <li><a href="#">Formación titulada</a></li>
+			    <li role="separator" class="divider"></li>
+			    <li><a href="#">Formación complementaria</a></li>
+			    <li role="separator" class="divider"></li>
+			    <li><a href="#">Formación virtual</a></li>
+			  </ul>
+			</div>
+			<div class="btn-group da">
+			  <a href=""><button type="button" class="btn btn-default">Nuestros aliados</button></a>
+			</div>
+			<div class="btn-group da">
+			  <a href=""><button type="button" class="btn btn-default">Bienestar al aprendiz</button></a>
+			</div>
+	    </div>
+	</nav>
+	<!-- Slider -->
+	<div class="col-md-10 col-md-offset-1">
+		<div class="owl-carousel owl-theme">
+		    <div class="item"><img src="imgs/incripciones_ingles.png" alt=""></div>
+		    <div class="item"><img src="imgs/incripciones_ingles.png" alt=""></div>
+		    <div class="item"><img src="imgs/incripciones_ingles.png" alt=""></div>
+		</div> 
+		<div class="owl-dots"><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot active"><span></span></div></div>
+	</div>
+	<!-- Separador -->
+	<div>
+		<img src="imgs/cpi.jpg" alt="" style="height: 100px; width:100%; margin-top: 15px" >
+	</div>
+
+
+
+	<script src="js/jquery-3.1.1.js"></script>
+	<script src="js/owl.carousel.js"></script> 
+	<script src="js/bootstrap.min.js"></script> 
+	<script>
+		jQuery(document).ready(function ($) {
+
+		  
+		  
+			var slideCount = $('#slider ul li').length;
+			var slideWidth = $('#slider ul li').width();
+			var slideHeight = $('#slider ul li').height();
+			var sliderUlWidth = slideCount * slideWidth;
+			
+			$('#slider').css({ width: slideWidth, height: slideHeight });
+			
+			$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+			
+		    $('#slider ul li:last-child').prependTo('#slider ul');
+
+		    function moveLeft() {
+		        $('#slider ul').animate({
+		            left: + slideWidth
+		        }, 200, function () {
+		            $('#slider ul li:last-child').prependTo('#slider ul');
+		            $('#slider ul').css('left', '');
+		        });
+		    };
+
+		    function moveRight() {
+		        $('#slider ul').animate({
+		            left: - slideWidth
+		        }, 200, function () {
+		            $('#slider ul li:first-child').appendTo('#slider ul');
+		            $('#slider ul').css('left', '');
+		        });
+		    };
+
+		    $('a.control_prev').click(function () {
+		        moveLeft();
+		    });
+
+		    $('a.control_next').click(function () {
+		        moveRight();
+		    });
+
+		    $('.owl-carousel').owlCarousel({
+			    loop:true,
+			    margin:10,
+			    nav:true,
+			    responsive:{
+			        0:{
+			            items:1
+			        },
+			        600:{
+			            items:3
+			        },
+			        1000:{
+			            items:1,
+			            nav:true
+			        }
+			    }
+			});
+		});    
+
+	</script> 
+</body>
+</html>

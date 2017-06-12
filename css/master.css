@@ -71,7 +71,12 @@ a.control_next {
   width: 160px;
   font-size: 18px;
 }
-img .sep{
-	height: 500px;  
-	width: 200px;
+div.tecno{
+  margin-top: 50px;
+  border: 1px solid #ccc;
+  padding: 15px;
+
+}
+.texto{
+  margin-top:10px; 
 }

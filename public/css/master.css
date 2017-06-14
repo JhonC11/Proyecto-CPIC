@@ -103,6 +103,11 @@ p.info2{
   font-family: "Tahoma";
 
 }
+.tab-content{
+  background-color: black;
+  height: inherit;
+  overflow: hidden;
+}
 footer{
   background-color: rgba(0, 91, 130, 0.8);
   color: #fff;

@@ -86,3 +86,18 @@ li a:hover{
 li a {
   color: black;
 }
+/*sennova*/
+h1.titulo{
+  color:#ccc;
+  text-align: center;
+}
+p.info2{
+  text-align: left;
+  border: 1px solid red;
+  width: 700px;
+  position:absolute;
+  left: 40px;
+}
+.subti{
+  color: #F55E3B;
+}

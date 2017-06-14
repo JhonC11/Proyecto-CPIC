@@ -8,20 +8,6 @@ div.da{
 	display: inline-block;
 }
 
-div.tecno{
-  margin-top: 50px;
-  border: 1px solid #ccc;
-  padding: 15px;
-
-}
-div.tecno:hover{
-  background-color: rgba(0, 0, 0, 0.33);
-  color: white;
-}
-.texto{
-  margin-top:10px; 
-  text-align: center;
-}
 
 .owl-nav{
     color: #FFF;
@@ -100,4 +86,8 @@ p.info2{
 }
 .subti{
   color: #F55E3B;
+}
+.ali{
+  margin-top: 430px;
+  border-top: 2px solid silver;
 }

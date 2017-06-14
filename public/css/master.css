@@ -8,6 +8,7 @@ div.da{
 	display: inline-block;
 }
 
+<<<<<<< HEAD
 div.tecno{
   margin-top: 50px;
   border: 1px solid #ccc;
@@ -23,6 +24,8 @@ div.tecno:hover{
   margin-top:10px; 
   text-align: center;
 }
+=======
+>>>>>>> cd1d380cc86482ca25ae8fb1d5785462328aa6ac
 
 .owl-nav{
     color: #FFF;
@@ -102,9 +105,16 @@ p.info2{
 .subti{
   color: #F55E3B;
 }
+<<<<<<< HEAD
 /*.glyphicon-plus{
   position: relative;
   left: 100px;
   top: 50px;
   font-size: 50px;
 }*/
+=======
+.ali{
+  margin-top: 430px;
+  border-top: 2px solid silver;
+}
+>>>>>>> cd1d380cc86482ca25ae8fb1d5785462328aa6ac

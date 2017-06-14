@@ -17,6 +17,7 @@ div.tecno{
 div.tecno:hover{
   background-color: rgba(0, 0, 0, 0.33);
   color: white;
+
 }
 .texto{
   margin-top:10px; 
@@ -101,3 +102,9 @@ p.info2{
 .subti{
   color: #F55E3B;
 }
+/*.glyphicon-plus{
+  position: relative;
+  left: 100px;
+  top: 50px;
+  font-size: 50px;
+}*/

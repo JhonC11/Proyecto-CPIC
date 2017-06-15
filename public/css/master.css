@@ -124,9 +124,9 @@ footer{
 }
 
 .panel-group .panel , .panel-default>.panel-heading {
-  /* background-color: transparent; */
+background-color: transparent;
   /*Aqui es donde se edita esa opacidad */
-  background-color: rgba(0, 0, 0, 0.36);
+  /*background-color: rgba(0, 0, 0, 0.36);*/
 }
 .panel-default{
   border: none;

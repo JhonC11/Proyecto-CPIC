@@ -84,30 +84,17 @@ li a:hover{
 li a {
   color: black;
 }
-/*sennova*/
-h1.titulo{
-  color:#ccc;
-  text-align: center;
-}
-p.info2{
-  text-align: left;
-  border: 1px solid red;
-  width: 700px;
-  position:absolute;
-  left: 40px;
-}
-.subti{
-  color: #F55E3B;
-}
+
+
 .ali{
   font-family: "Tahoma";
-
+  color:#999;
 }
-ul{
-  background-color: silver;
+ul.nav.nav-tabs.row{
+  background-color: rgba(192, 192, 192, 0.2);
 }
 .tab-content{
-  background-color: silver;
+  background-color: rgba(192, 192, 192, 0.2);
   height: inherit;
   overflow: hidden;
 }
@@ -133,7 +120,7 @@ background-color: transparent;
 }
 .panel-default{
   border: none;
-  color: #fff;
+  color: #999;
 }
 .container-fluid{
   padding: 0px;
@@ -144,8 +131,17 @@ background-color: transparent;
 }
 .panel-body{
   font-size: 20px;
-  text-align: center;
+  text-align: left;
 }
 .tab-pane{
   margin-top: 20px;
+}
+h4.panel-title{
+  color: #999;
+}
+.panel-title>a{
+  text-decoration: none;
+}
+.panel-title>a:hover{
+    color: rgba(0, 91, 130, 0.8);
 }

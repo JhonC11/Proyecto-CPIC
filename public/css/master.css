@@ -103,8 +103,11 @@ p.info2{
   font-family: "Tahoma";
 
 }
+ul{
+  background-color: silver;
+}
 .tab-content{
-  background: url(../imgs/sin.png), -webkit-linear-gradient(45deg, #ccc, rgba(0, 91, 130, 0.8)); 
+  background-color: silver;
   height: inherit;
   overflow: hidden;
 }

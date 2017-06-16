@@ -156,11 +156,12 @@ h4.panel-title{
 .tex.col-md-4{
   color:#fff;
   border: 1px solid white;
-  margin-left: 100px;
+  margin-left: 125px;
   margin-top: 20px; 
   height: 200px;
   width: 280px;
   padding: 20px;
+  margin-bottom: 25px;
   transition: 500ms;
 
 }

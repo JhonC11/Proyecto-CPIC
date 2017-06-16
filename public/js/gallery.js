@@ -11,7 +11,7 @@
 			'https://unsplash.it/660/455?image=838'
 			],
 			align: true,
-			getViewAllText: function(imgsCount) { return 'View all' }
+			getViewAllText: function(imgsCount) { return 'Ver más' }
 		});
 
 	});

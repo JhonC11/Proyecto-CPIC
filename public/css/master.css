@@ -145,3 +145,14 @@ h4.panel-title{
 .panel-title>a:hover{
     color: rgba(0, 91, 130, 0.8);
 }
+#gallery img:hover{
+  -webkit-transform:scale(1.05);
+  transform: scale(1.05);
+}
+#gallery img{
+  transition: 500ms;
+}
+.galeria{
+  margin-top: 20px;
+}
+

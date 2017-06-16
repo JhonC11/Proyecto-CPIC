@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="public/css/bootstrap.min.css">
 	<link rel="stylesheet" href="public/css/master.css">
 	<link rel="stylesheet" href="public/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="public/css/images-grid.css">
+
 </head>
 <body>
 	<!-- navbar -->
@@ -17,7 +19,7 @@
 			<ul>
 				<li class="item1">Programa de formación
 					<ul class="submenu">
-						<li><a  href="#">Formación titulada</a></li>
+						<li><a  href="ftitulada.php">Formación titulada</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a  href="#">Formación complementaria</a></li>
 						<li role="separator" class="divider"></li>
@@ -336,8 +338,11 @@
 
 	</div>
 
-</div> <!-- /container-fluid -->
+</div> 
+<!-- Galeria -->
 
+<img src="public/imgs/encabe_biene.png" alt="" width="100%" height="90px">
+<div id="gallery"></div>
 <!-- Footer -->
 <footer>Todos los derechos reservados</footer>
 
@@ -345,6 +350,8 @@
 <script src="public/js/jquery-3.1.1.js"></script>
 <script src="public/js/owl.carousel.min.js"></script> 
 <script src="public/js/bootstrap.min.js"></script> 
+<script src="public/js/images-grid.js"></script>
+
 <script>
 	jQuery(document).ready(function ($) {
 
@@ -391,5 +398,33 @@
 	});    
 
 </script> 
+        <script>
+
+            var images = [
+                'public/imgs/1.JPG',
+                'public/imgs/2.jpg',
+                'public/imgs/3.jpg',
+                'public/imgs/4.jpg',
+                'https://unsplash.it/1300/800?image=839',
+                'https://unsplash.it/1300/800?image=838'
+            ];
+
+            $(function() {
+                $('#gallery').imagesGrid({
+                    images: [
+                        'public/imgs/1.jpg',
+                'public/imgs/2.jpg',
+                'public/imgs/3.jpg',
+                'public/imgs/4.jpg',
+                'https://unsplash.it/660/990?image=839',
+                'https://unsplash.it/660/455?image=838'
+                    ],
+                    align: true,
+                    getViewAllText: function(imgsCount) { return 'View all' }
+                });
+
+            });
+
+        </script>
 </body>
 </html>

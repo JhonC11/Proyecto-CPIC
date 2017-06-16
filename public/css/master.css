@@ -145,3 +145,7 @@ h4.panel-title{
 .panel-title>a:hover{
     color: rgba(0, 91, 130, 0.8);
 }
+.imgs-grid-modal .modal-close{
+  background-image: url(../imgs/investigacion.png);
+  
+}

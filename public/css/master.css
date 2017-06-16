@@ -122,9 +122,6 @@ background-color: transparent;
   border: none;
   color: #999;
 }
-.container-fluid{
-  padding: 0px;
-}
 .panel-title{
   color: #fff;
   font-size: 2em;
@@ -151,8 +148,29 @@ h4.panel-title{
 }
 #gallery img{
   transition: 500ms;
+
 }
 .galeria{
-  margin-top: 20px;
+  background-color: #007881;
 }
+.tex.col-md-4{
+  color:#fff;
+  border: 1px solid white;
+  margin-left: 100px;
+  margin-top: 20px; 
+  height: 200px;
+  width: 280px;
+  padding: 20px;
+  transition: 500ms;
 
+}
+.tet.row{
+  background-color: #007881;
+  font-family: Tahoma;
+}
+.tex.col-md-4:hover{
+  -webkit-filter:opacity(.5);
+  filter: opacity(.5);
+  background-color: white;
+  color:black;
+}

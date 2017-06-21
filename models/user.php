@@ -1,37 +1,32 @@
 <?php  
-	
-	class User extends Database{
+
+	class user extends Database{
 
 		public $mysqli;
 
 		public function __construct(){
 
-			$this->mysqli = parent::connection();		
+			$this->mysqli = parent::Conexion();
 		}
 
-		public function listar(){
+		public function Listar(){
 
-			$variable = $this->mysqli->query("SELECT * FROM usuarios");
-			return $variable;
+			$stmt = $this->mysqli->query("SELECT * FROM usuarios");
+			return $stmt;
 		}
-
 		public function consultar($id){
 
-			$variable = $this->mysqli->query("SELECT * FROM usuarios WHERE id_usuario = $id");
-			return $variable;
+			$stmt = $this->mysqli->query("SELECT * FROM usuarios WHERE id_usuario = $id");
+			return $stmt;
+		}		
+		public function insertar($nombre, $email, $password, $dependencia){
+			$stmt = $this->mysqli->query("INSERT INTO usuarios VALUES('', '$nombre','$email','$password','$dependencia')");
 		}
-
-		public function insertar($nombre, $email, $password, $clase){
-			$variable = $this->mysqli->query("INSERT INTO usuarios VALUES('', '$nombre','$email','$password','$clase')");
-		}
-
 		public function modificar($id, $nombre, $email, $password, $clase){
-			$variable = $this->mysqli->query("UPDATE usuarios SET nombre = '$nombre', email = '$email',password = '$password', clase = '$clase' WHERE id_usuario = '$id'");
-		}
-
+			$stmt = $this->mysqli->query("UPDATE usuarios SET nombre = '$nombre', email = '$email',password = '$password', dependencia = '$dependencia' WHERE id_usuario = '$id'");
+		}		
 		public function eliminar($id){
-			$variable = $this->mysqli->query("DELETE FROM usuarios WHERE id_usuario = '$id'");
-		}
+			$stmt = $this->mysqli->query("DELETE FROM usuarios WHERE id_usuario = '$id'");
+		}		
 	}
-
 ?>

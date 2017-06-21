@@ -2,9 +2,9 @@
 
 	abstract class Database{
 
-		public function connection(){
+		public function Conexion(){
 
-			$conx = new mysqli('localhost','root','','Portafolio-CPIC');
+			$conx = new mysqli('localhost','root','','portafolio-cpic');
 			return $conx;
 		}
 	}

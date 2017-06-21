@@ -147,16 +147,16 @@ h4.panel-title{
   transform: scale(1.05);
 }
 #gallery img{
-  transition: 500ms;
-
+  transition: 500ms;  
 }
 .galeria{
-  background-color: #007881;
+  background-color: #fff; 
+  margin-top: 60px; 
 }
 .tex.col-md-4{
-  color:#fff;
-  border: 1px solid white;
-  margin-left: 125px;
+  color:#000;
+  border: 1px solid #007881;
+  margin-left: 100px;
   margin-top: 20px; 
   height: 200px;
   width: 280px;
@@ -166,12 +166,19 @@ h4.panel-title{
 
 }
 .tet.row{
-  background-color: #007881;
+  background-color: #fff;
   font-family: Tahoma;
 }
 .tex.col-md-4:hover{
   -webkit-filter:opacity(.5);
   filter: opacity(.5);
+  background-color: #007881;
+  box-shadow: 5px 5px 5px #000;
+  color:white;
+}
+.tex.col-md-4{
   background-color: white;
-  color:black;
+  box-shadow: 5px 5px 5px #007881;
+  margin-top: 60px; 
+  
 }

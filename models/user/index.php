@@ -1,14 +1,22 @@
 <?php 
-	include '../load.php';
- ?>
+include '../load.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Dashboard Usuarios</title>
+	<title>Dashboard</title>
 	<link rel="stylesheet" href="../../public/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../../public/css/master.css">
+	<style>
 
+		nav.navbar{
+			background-color: #fff;
+		}
+		div.da{
+			display: inline-block;
+		}
+
+	</style>
 </head>
 
 <body>
@@ -18,47 +26,55 @@
 		</div>
 		<div class="da">
 			<ul class="nav navbar-nav nabvar-right">
-            <li class="">
-              <a href="../../index.php">Pagina</a>
-            </li>
-            <li>
-              <a href="index.php">Usuarios</a>
-            </li>
-          </ul>
+				<li class="">
+					<a href="../../index.php">Pagina</a>
+				</li>
+				<li>
+					<a href="index.php">Usuarios</a>
+				</li>
+			</ul>
 		</div>
-	<h1>Dashboard Usuarios</h1>
-	<hr>
-	<button class="btn btn-default">
-		
-		<i class="glyphicon glyphicon-plus"></i><a href="registrar.php">Adicionar</a>
-	</button>
-	<?php 
+	</nav>
+		<h1 class="text-center">Dashboard</h1>
+		<hr>
+
+		<?php 
 
 		$objeto = new user();
 		$objetos = $objeto->Listar();
 
-	 ?>
-	<table class="table">
-		<tr>
-			<td>Nombre</td>
-			<td>Dependencia</td>
-			<td>CRUD</td>
-		</tr>
-	<?php foreach ($objetos as $key => $value): ?>
-		<tr>
-			<td><?php echo $value['nombre'];?></td>
-			<td><?php echo $value['dependencia'];?></td>
-			<td>
-				<a href="consultar.php?id=<?php echo $value['id_usuario']?>">Consultar</a>
-				<a href="modificar.php?id=<?php echo $value['id_usuario']?>">Modificar</a>
-				<a href="eliminar.php?id=<?php echo $value['id_usuario']?>">Eliminar</a>
-			</td>
-		</tr>
-	<?php endforeach ?>
-	</table>
-<script src="../../public/js/jquery-3.1.1.js"></script>
+		?>
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+			<a href="registrar.php" class=" btn btn-default"><i class="glyphicon glyphicon-plus"></i>  Adicionar</a>
 
-<script src="../../public/js/bootstrap.min.js"></script> 
 
-</body>
-</html>
+
+				<br>
+				<br>
+				<table class="table table-bordered text-center">
+					<tr>
+						<td><strong>Nombre</strong></td>
+						<td><strong>Dependencia</strong></td>
+						<td><strong>Acciones</strong></td>
+					</tr>
+					<?php foreach ($objetos as $key => $value): ?>
+						<tr>
+							<td><?php echo $value['nombre'];?></td>
+							<td><?php echo $value['dependencia'];?></td>
+							<td>
+								<a class="btn btn-default" href="consultar.php?id=<?php echo $value['id_usuario']?>"><i class="glyphicon glyphicon-search"></i></a>
+								<a class="btn btn-success" href="modificar.php?id=<?php echo $value['id_usuario']?>"><i class="glyphicon glyphicon-pencil"></i></a>
+								<a class="btn btn-danger" href="eliminar.php?id=<?php echo $value['id_usuario']?>"><i class="glyphicon glyphicon-trash"></i> </a>
+							</td>
+						</tr>
+					<?php endforeach ?>
+				</table>
+			</div>
+		</div>
+		<script src="../../public/js/jquery-3.1.1.js"></script>
+
+		<script src="../../public/js/bootstrap.min.js"></script> 
+
+	</body>
+	</html>

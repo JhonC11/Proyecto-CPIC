@@ -27,6 +27,8 @@
 					</ul>
 				</li>
 			</ul>
+		</div>
+		<div class="da">
 			<section id="modal">
 				<article>
 					<h2>Login</h2>
@@ -38,7 +40,7 @@
 							
 						</div>
 					</form>
-					<button> &times; Cerrar Ventana </button>
+					<button class="cerrarmodal"> &times; Cerrar Ventana </button>
 				</article>
 			</section>
 			<button id="btnOpenModal">Login</button>

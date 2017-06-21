@@ -9,7 +9,7 @@
 				});
 			});
 			/* - - - - - - - - - - - - - - - - - - - - - */
-			$('#modal article button, #modal').click(function(event) {
+			$('.cerrarmodal').click(function(event) {
 				$('#modal article').animate({top: '-1000px'},
 					500, function() {
 					$(this).hide();

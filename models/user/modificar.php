@@ -24,7 +24,7 @@
 		<div class="col-md-6 col-md-offset-3">
 			
 		<?php foreach ($datos as $key => $value): ?>
-			<form class="form-group" action="acciones.php" method="post">
+			<form class="form-group" action="acciones2.php" method="post">
 				<div>
 					<label>Nombre</label>
 					<input  class="form-control" value="<?php echo $value['nombre']; ?>"  type="text" name="nombre" placeholder="Digite su nombre" required>			

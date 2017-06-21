@@ -5,20 +5,40 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Usuarios</title>
+	<title>Dashboard Usuarios</title>
+	<link rel="stylesheet" href="../../public/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../public/css/master.css">
+
 </head>
 
 <body>
-	<h1>Usuarios</h1>
+	<nav class="navbar navbar-default navbar-static-top">
+		<div class="da">
+			<img src="../../public/imgs/encabe1.png" alt="">
+		</div>
+		<div class="da">
+			<ul class="nav navbar-nav nabvar-right">
+            <li class="">
+              <a href="../../index.php">Pagina</a>
+            </li>
+            <li>
+              <a href="index.php">Usuarios</a>
+            </li>
+          </ul>
+		</div>
+	<h1>Dashboard Usuarios</h1>
 	<hr>
-	<a href="registrar.php">Adicionar</a>
+	<button class="btn btn-default">
+		
+		<i class="glyphicon glyphicon-plus"></i><a href="registrar.php">Adicionar</a>
+	</button>
 	<?php 
 
 		$objeto = new user();
 		$objetos = $objeto->Listar();
 
 	 ?>
-	<table border="1">
+	<table class="table">
 		<tr>
 			<td>Nombre</td>
 			<td>Dependencia</td>
@@ -36,5 +56,9 @@
 		</tr>
 	<?php endforeach ?>
 	</table>
+<script src="../../public/js/jquery-3.1.1.js"></script>
+
+<script src="../../public/js/bootstrap.min.js"></script> 
+
 </body>
 </html>

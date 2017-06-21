@@ -27,6 +27,21 @@
 					</ul>
 				</li>
 			</ul>
+			<section id="modal">
+				<article>
+					<h2>Login</h2>
+
+					<form method="POST">
+						<div class="form-group">
+							E-mail
+							<input type="text" class="form-control">
+							
+						</div>
+					</form>
+					<button> &times; Cerrar Ventana </button>
+				</article>
+			</section>
+			<button id="btnOpenModal">Login</button>
 		</div>
 	</nav>
 	<!-- Slider -->
@@ -439,6 +454,7 @@
 <script src="public/js/images-grid.js"></script>
 <script src="public/js/carousel.js"></script> 
 <script src="public/js/gallery.js"></script> 
+<script src="public/js/login.js"></script>
 
 
 

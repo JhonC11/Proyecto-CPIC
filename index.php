@@ -19,7 +19,7 @@
 			<ul>
 				<li class="item1">Programa de formación
 					<ul class="submenu">
-						<li><a  href="ftitulada.php">Formación titulada</a></li>
+						<li><a  href="views/ftitulada.php">Formación titulada</a></li>
 						<li role="separator" class="divider"></li>
 						<li><a  href="#">Formación complementaria</a></li>
 						<li role="separator" class="divider"></li>
@@ -366,7 +366,7 @@
 		<div class="container-fluid">
 
 				<div class="tet row">
-							<img src="public/imgs/encabe_biene.png" alt="" width="100%" height="90px" ">
+							<img src="public/imgs/encabe_biene.png" alt="" width="100%" height="90px">
 							<div class= "tex col-md-4">
 							    <strong>SALUD</strong><br>
 								<p>

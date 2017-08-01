@@ -244,7 +244,33 @@ button.btn-personalizada {
       background-color: #a43749;
       cursor: pointer;
     }
-.accordion-group .accordion-heading:after {
+    #button_co{
+      color: #7FBBC0;
+    }
+    #panel-body{
+      color: black;
+      font-size: 17px;
+    }
+    .panel-heading{
+      border-collapse: 10px;
+    }
+    .panel-group{
+      font-size: 12px;
+    }
+    #el_mas{
+      position: absolute;
+      top: 18px;
+    right: 800px;
+    font-size: 190px;
+
+    }
+    #el_mas:hover{
+      transform: translate(0,350px);
+    -webkit-transform: translate(0,350px);
+    -o-transform: translate(0,350px); 
+    -moz-transform: translate(0,350px);
+    }
+/*.accordion-group .accordion-heading:after {
         background: #E79925;
     }
 
@@ -271,4 +297,4 @@ button.btn-personalizada {
 
 .accordion-group a{color:#231f20;}
 .accordion-group a:hover{text-decoration:none;}
-.accordion-group .accordion-inner{border:none;padding:20px;}
+.accordion-group .accordion-inner{border:none;padding:20px;}*/

@@ -46,62 +46,45 @@
 		</div>
 	</nav>
 	<!-- fin del menu -->
-	
+
 
 
 	<div class="container">
 		<div class="row">
-		
-			
 
-				<div class="col-md-6 col-md-offset-3 panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingOne">
+				<div class="col-md-6 panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingOne">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				          Tecnologos
+				        </a>
+				      </h4>
+				  	</div>
+				  </div>
+
+				  <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingSOne">
+      <div class="panel-body">
+        <div class="panel-group" id="sub-accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingsOne">
 							<h4 class="panel-title">
-								<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" id="button_co" aria-controls="collapseOne">
+								<a role="button" data-toggle="collapse" data-parent="#sub-accordion" href="#collapsesOne" aria-expanded="true" id="button_co" aria-controls="collapsesOne">
 									tecnologo topografico 
 								</a>
 							</h4>
 						</div>
-						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+						<div id="collapsesOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingsOne">
 							<div class="panel-body" id="panel-body">
 								Entregar información detallada de la superficie de un terreno para elaborar de manera correcta y óptima un proyecto constructivo.
 							</div>
 						</div>
 					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingTwo">
-							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" id="button_co" aria-controls="collapseTwo">
-									tecnico en mantenimiento  mecatronica  de automotores 
-								</a>
-							</h4>
-						</div>
-						<div id="el_mas" class="move_down">+</div>
-						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-							<div class="panel-body" id="panel-body">
-								La integración de mecánica, electrónica y software para crear ahorros de energía y de recursos y sistemas de alta inteligencia.
-							</div>
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingThree">
-							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" id="button_co" aria-controls="collapseThree">
-									Tecnico Soldadura De Productos Metalicos(Platino)
-								</a>
-							</h4>
-						</div>
-						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-							<div class="panel-body" id="panel-body">
-								La soldadura es un proceso de fabricación en donde se realiza la unión de dos o más piezas de un material, (generalmente metales o termoplásticos), usualmente logrado a través de la coalescencia (fusión), en la cual las piezas son soldadas fundiendo.
-							</div>
-						</div>
-					</div>
-					<div class="panel panel-default">
+<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingFour">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" id="button_co" aria-controls="collapseFour">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion" href="#collapseFour" aria-expanded="false" id="button_co" aria-controls="collapseFour">
 									Tecnologo En Electricidad Industrial 
 								</a>
 							</h4>
@@ -112,10 +95,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel panel-default">
+<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingFive">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" id="button_co" aria-controls="collapseFive">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion" href="#collapseFive" aria-expanded="false" id="button_co" aria-controls="collapseFive">
 									Tecnologo En Desarrollo Grafico De Proyectos De Arquitectura
 								</a>
 							</h4>
@@ -126,10 +109,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel panel-default">
+<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingSix">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" id="button_co" aria-controls="collapseSix">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion" href="#collapseSix" aria-expanded="false" id="button_co" aria-controls="collapseSix">
 									Tecnologo En Mantenimiento Mecanico Industrial
 								</a>
 							</h4>
@@ -140,10 +123,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel panel-default">
+<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingSeven">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" id="button_co" aria-controls="collapseSeven">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion" href="#collapseSeven" aria-expanded="false" id="button_co" aria-controls="collapseSeven">
 									Tecnologo En Análisis y desarrollo de sistemas de información
 								</a>
 							</h4>
@@ -154,10 +137,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel panel-default">
+<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingEight">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" id="button_co" aria-controls="collapseEight">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion" href="#collapseEight" aria-expanded="false" id="button_co" aria-controls="collapseEight">
 									Tecnologo En Mecanizado de productos metalmecánicos
 								</a>
 							</h4>
@@ -168,10 +151,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel panel-default">
+<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingNine">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" id="button_co" aria-controls="collapseNine">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion" href="#collapseNine" aria-expanded="false" id="button_co" aria-controls="collapseNine">
 									Tecnologo En Mantenimiento de Motocicletas
 								</a>
 							</h4>
@@ -185,7 +168,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingTen">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" id="button_co" aria-controls="collapseTen">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion" href="#collapseTen" aria-expanded="false" id="button_co" aria-controls="collapseTen">
 									Tecnologo En Construcción
 								</a>
 							</h4>
@@ -196,24 +179,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingEleven">
-							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" id="button_co" aria-controls="collapseEleven">
-									Tecnico Soldadura De Productos Metalicos(Platino)
-								</a>
-							</h4>
-						</div>
-						<div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
-							<div class="panel-body" id="panel-body">
-								Es un profesional con formación integral y competencias para participar en grupos interdisciplinarios encargados del diseño, la construcción y la interventoría de obras civiles; planear y asesorar los aspectos técnicos que se deben seguir en un proceso constructivo; y administrar los recursos humanos y físicos que se requieren para la construcción de obras civiles, haciendo énfasis en el control de calidad de los diferentes materiales.
-							</div>
-						</div>
-					</div>
-					<div class="panel panel-default">
+<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingTwelve">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" id="button_co" aria-controls="collapseTwelve">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion" href="#collapseTwelve" aria-expanded="false" id="button_co" aria-controls="collapseTwelve">
 									Tecnologo En Gestión integrada de sistemas de calidad HSEQ
 								</a>
 							</h4>
@@ -225,10 +194,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel panel-default">
+<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingThirteen">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThirteen" aria-expanded="false" id="button_co" aria-controls="collapseThirteen">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion" href="#collapseThirteen" aria-expanded="false" id="button_co" aria-controls="collapseThirteen">
 									Tecnologo En Mantenimiento y reparación de edificaciones
 								</a>
 							</h4>
@@ -239,24 +208,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingFourteen">
-							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFourteen" aria-expanded="false" id="button_co" aria-controls="collapseFourteen">
-									Tecnico Patronaje Industrial De Prendas De Vestir
-								</a>
-							</h4>
-						</div>
-						<div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
-							<div class="panel-body" id="panel-body">
-								El patronaje industrial es la creación de patrones que permiten elaborar moldes para crear prendas de vestir, en este caso prendas para la mujer.  Este sistema consiste en desglosar el vestido o prenda de vestir por piezas teniendo en cuenta las diferentes partes del cuerpo.
-							</div>
-						</div>
-					</div>
-					<div class="panel panel-default">
+<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingFiveteen">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFiveteen" aria-expanded="false" id="button_co" aria-controls="collapseFiveteen">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion" href="#collapseFiveteen" aria-expanded="false" id="button_co" aria-controls="collapseFiveteen">
 									Tecnologo En Desarrollo grafico de proyectos de arquitectura e ingeniería
 								</a>
 							</h4>
@@ -273,7 +228,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingSixteen">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSixteen" aria-expanded="false" id="button_co" aria-controls="collapseSixteen">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion" href="#collapseSixteen" aria-expanded="false" id="button_co" aria-controls="collapseSixteen">
 									Tecnologo En Mantenimiento electromecánico industrial
 								</a>
 							</h4>
@@ -288,24 +243,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingSeventeen">
-							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeventeen" aria-expanded="false" id="button_co" aria-controls="collapseSeventeen">
-									Tecnico En Mantenimiento Eléctrico Y Electrónico En Automotores
-								</a>
-							</h4>
-						</div>
-						<div id="collapseSeventeen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeventeen">
-							<div class="panel-body" id="panel-body">
-								Se creó para brindar al sector productivo de Mantenimiento de Equipos de Transporte, de grupos electrógenos y de equipos de la construcción, minería y petroleros la  posibilidad de incorporar personal con altas calidades laborales y profesionales que contribuyan al desarrollo económico, social y tecnológico de su entorno y del país, así mismo ofrecer a los aprendices formación en las tecnologías de Mecánica, Eléctrica, Electrónica Automotriz.
-							</div>
-						</div>
-					</div>
-					<div class="panel panel-default">
+<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingEighteen">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEighteen" aria-expanded="false" id="button_co" aria-controls="collapseEighteen">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion" href="#collapseEighteen" aria-expanded="false" id="button_co" aria-controls="collapseEighteen">
 									Tecnologo En Mantenimiento Mecánico Industrial
 								</a>
 							</h4>
@@ -317,10 +258,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel panel-default">
+<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingNineteen">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNineteen" aria-expanded="false" id="button_co" aria-controls="collapseNineteen">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion" href="#collapseNineteen" aria-expanded="false" id="button_co" aria-controls="collapseNineteen">
 									Tecnologo En Mantenimiento Mecánico Industrial
 								</a>
 							</h4>
@@ -332,10 +273,149 @@
 							</div>
 						</div>
 					</div>
+<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingTwentytwo">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion" href="#collapseTwentytwo" aria-expanded="false" id="button_co" aria-controls="collapseTwentytwo">
+									Tecnologo En Mantenimiento Mecatrónico De Automotores
+								</a>
+							</h4>
+						</div>
+						<div id="collapseTwentytwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentytwo">
+							<div class="panel-body" id="panel-body">
+								La mecatrónica de por sí no apunta a ser precisamente una tecnología y/o ingeniería, es la síntesis de tecnologías, usando no solamente tecnología mecánica convencional, sino también tecnología de ingeniería existente tal como electrónica, ingeniería de sistemas, etc. Libremente para los propósitos necesarios. O sea, se requieren dos conceptos básicos para mezclar las tecnologías en este rango amplio y organizarlas, el concepto de sistema y el de interface.
+							</div>
+						</div>
+					</div>
+<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingTwentynine">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion" href="#collapseTwentynine" aria-expanded="false" id="button_co" aria-controls="collapseTwentynine">
+									Tecnologo En obras civiles
+								</a>
+							</h4>
+						</div>
+						<div id="collapseTwentynine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentynine">
+							<div class="panel-body" id="panel-body">
+								La carrera Tecnologoa en Obras Civiles busca formar tecnicos en el diseño, la construccion y la interventoria de obras civiles; capaces deplanear y asesorar los aspectos tecnicos que se deben seguir en un proceso constructivo; y administrar los recursos humanos y fisicosque se requieren para la construccion de obras civiles, haciendo enfasis en el control de calidad de los diferentes materiales.
+							</div>
+						</div>
+					</div>
+					</div>
+					</div>
+					</div>
+					
+
+
+
+				  <!-- FIN DE GRUPO TECNOLOGOS -->
+
+
+
+<!-- Hola -->
+
+
+<div class="col-md-6 panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+
+</div>
+<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">	
+				  <div class="panel panel-default">
+				    <div class="panel-heading" role="tab" id="headingOne">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseDOs" aria-expanded="true" aria-controls="collapseDOs">
+				          Tecnicos
+				        </a>
+				      </h4>
+				  </div>
+				  <div id="collapseDOs" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingSDOs">
+      <div class="panel-body">
+        <div class="panel-group" id="sub-accordion2" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingTwo">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion2" href="#collapseTwo" aria-expanded="false" id="button_co" aria-controls="collapseTwo">
+									tecnico en mantenimiento  mecatronica  de automotores 
+								</a>
+							</h4>
+						</div>
+						<!-- <div id="el_mas" class="move_down">+</div> -->
+						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+							<div class="panel-body" id="panel-body">
+								La integración de mecánica, electrónica y software para crear ahorros de energía y de recursos y sistemas de alta inteligencia.
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingThree">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion2" href="#collapseThree" aria-expanded="false" id="button_co" aria-controls="collapseThree">
+									Tecnico Soldadura De Productos Metalicos(Platino)
+								</a>
+							</h4>
+						</div>
+						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+							<div class="panel-body" id="panel-body">
+								La soldadura es un proceso de fabricación en donde se realiza la unión de dos o más piezas de un material, (generalmente metales o termoplásticos), usualmente logrado a través de la coalescencia (fusión), en la cual las piezas son soldadas fundiendo.
+							</div>
+						</div>
+					</div>
+					
+					
+					
+					
+					
+					
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingEleven">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion2" href="#collapseEleven" aria-expanded="false" id="button_co" aria-controls="collapseEleven">
+									Tecnico Soldadura De Productos Metalicos(Platino)
+								</a>
+							</h4>
+						</div>
+						<div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+							<div class="panel-body" id="panel-body">
+								Es un profesional con formación integral y competencias para participar en grupos interdisciplinarios encargados del diseño, la construcción y la interventoría de obras civiles; planear y asesorar los aspectos técnicos que se deben seguir en un proceso constructivo; y administrar los recursos humanos y físicos que se requieren para la construcción de obras civiles, haciendo énfasis en el control de calidad de los diferentes materiales.
+							</div>
+						</div>
+					</div>
+					
+					
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingFourteen">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion2" href="#collapseFourteen" aria-expanded="false" id="button_co" aria-controls="collapseFourteen">
+									Tecnico Patronaje Industrial De Prendas De Vestir
+								</a>
+							</h4>
+						</div>
+						<div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFourteen">
+							<div class="panel-body" id="panel-body">
+								El patronaje industrial es la creación de patrones que permiten elaborar moldes para crear prendas de vestir, en este caso prendas para la mujer.  Este sistema consiste en desglosar el vestido o prenda de vestir por piezas teniendo en cuenta las diferentes partes del cuerpo.
+							</div>
+						</div>
+					</div>
+					
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingSeventeen">
+							<h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion2" href="#collapseSeventeen" aria-expanded="false" id="button_co" aria-controls="collapseSeventeen">
+									Tecnico En Mantenimiento Eléctrico Y Electrónico En Automotores
+								</a>
+							</h4>
+						</div>
+						<div id="collapseSeventeen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeventeen">
+							<div class="panel-body" id="panel-body">
+								Se creó para brindar al sector productivo de Mantenimiento de Equipos de Transporte, de grupos electrógenos y de equipos de la construcción, minería y petroleros la  posibilidad de incorporar personal con altas calidades laborales y profesionales que contribuyan al desarrollo económico, social y tecnológico de su entorno y del país, así mismo ofrecer a los aprendices formación en las tecnologías de Mecánica, Eléctrica, Electrónica Automotriz.
+							</div>
+						</div>
+					</div>
+					
+					
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingTwenty">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwenty" aria-expanded="false" id="button_co" aria-controls="collapseTwenty">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion2" href="#collapseTwenty" aria-expanded="false" id="button_co" aria-controls="collapseTwenty">
 									Tecnico En Mantenimiento De Motores Diésel
 								</a>
 							</h4>
@@ -350,7 +430,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingTwentyOne">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyOne" aria-expanded="false" id="button_co" aria-controls="collapseTwentyOne">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion2" href="#collapseTwentyOne" aria-expanded="false" id="button_co" aria-controls="collapseTwentyOne">
 									Tecnico En Seguridad Vial, Control De Transito Y Transporte
 								</a>
 							</h4>
@@ -361,24 +441,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingTwentytwo">
-							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentytwo" aria-expanded="false" id="button_co" aria-controls="collapseTwentytwo">
-									Tecnologo En Mantenimiento Mecatrónico De Automotores
-								</a>
-							</h4>
-						</div>
-						<div id="collapseTwentytwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentytwo">
-							<div class="panel-body" id="panel-body">
-								La mecatrónica de por sí no apunta a ser precisamente una tecnología y/o ingeniería, es la síntesis de tecnologías, usando no solamente tecnología mecánica convencional, sino también tecnología de ingeniería existente tal como electrónica, ingeniería de sistemas, etc. Libremente para los propósitos necesarios. O sea, se requieren dos conceptos básicos para mezclar las tecnologías en este rango amplio y organizarlas, el concepto de sistema y el de interface.
-							</div>
-						</div>
-					</div>
+					
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingTwentythree">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentythree" aria-expanded="false" id="button_co" aria-controls="collapseTwentythree">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion2" href="#collapseTwentythree" aria-expanded="false" id="button_co" aria-controls="collapseTwentythree">
 									Tecnico En Electricidad Residencial
 								</a>
 							</h4>
@@ -393,7 +460,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingTwentyfour">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyfour" aria-expanded="false" id="button_co" aria-controls="collapseTwentyfour">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion2" href="#collapseTwentyfour" aria-expanded="false" id="button_co" aria-controls="collapseTwentyfour">
 									Tecnico En  Mecanizado De Productos Metalmecánicos
 								</a>
 							</h4>
@@ -409,7 +476,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingTwentyfive">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyfive" aria-expanded="false" id="button_co" aria-controls="collapseTwentyfive">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion2" href="#collapseTwentyfive" aria-expanded="false" id="button_co" aria-controls="collapseTwentyfive">
 									Tecnico En Construccion de Edificaciones
 								</a>
 							</h4>
@@ -423,7 +490,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingtwentysix">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsetwentysix" aria-expanded="false" id="button_co" aria-controls="collapsetwentysix">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion2" href="#collapsetwentysix" aria-expanded="false" id="button_co" aria-controls="collapsetwentysix">
 									Tecnico En Mantenimiento de Motocicletas
 								</a>
 							</h4>
@@ -437,7 +504,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingTwentyseven">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentyseven" aria-expanded="false" id="button_co" aria-controls="collapseTwentyseven">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion2" href="#collapseTwentyseven" aria-expanded="false" id="button_co" aria-controls="collapseTwentyseven">
 									Tecnico En Seguridad y Salud en el Trabajo 
 								</a>
 							</h4>
@@ -451,7 +518,7 @@
 					<div class="panel panel-default">
 						<div class="panel-heading" role="tab" id="headingtwentyeight">
 							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsetwentyeight" aria-expanded="false" id="button_co" aria-controls="collapsetwentyeight">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#sub-accordion2" href="#collapsetwentyeight" aria-expanded="false" id="button_co" aria-controls="collapsetwentyeight">
 									Tecnico En Seguridad y Salud en el Trabajo 
 								</a>
 							</h4>
@@ -462,21 +529,10 @@
 							</div>
 						</div>
 					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading" role="tab" id="headingTwentynine">
-							<h4 class="panel-title">
-								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwentynine" aria-expanded="false" id="button_co" aria-controls="collapseTwentynine">
-									Tecnologo En obras civiles
-								</a>
-							</h4>
-						</div>
-						<div id="collapseTwentynine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwentynine">
-							<div class="panel-body" id="panel-body">
-								La carrera Tecnologoa en Obras Civiles busca formar tecnicos en el diseño, la construccion y la interventoria de obras civiles; capaces deplanear y asesorar los aspectos tecnicos que se deben seguir en un proceso constructivo; y administrar los recursos humanos y fisicosque se requieren para la construccion de obras civiles, haciendo enfasis en el control de calidad de los diferentes materiales.
-							</div>
-						</div>
-					</div>
-				</div>
+			
+ 
+					
+					
 
 			</div>
 		</div>
@@ -486,10 +542,30 @@
 
 
 
-	<script src="../public/js/jquery-3.1.1.js"></script>
-	<script src="../public/js/login.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
+	<script src="../public/js/login.js"></script>
 	<script src="../public/js/bootstrap.min.js"></script>
+	
 
+	<script>
+	jQuery(document).ready(function($) {
+	// 	$('#el_mas').velocity({
+ //    		translateY: "+=100em"
+	// 	}, {
+	// 	    loop: 2,
+	// 	    duration: 5000,
+	// 	    /* Wait 100ms before alternating back. */
+	// 	    delay: 100
+	// 	});
+	// });
+
+
+	$.(#accordion).click(function(event) {
+		d
+	});
+	</script>
+
+	
 </body>
 </html>

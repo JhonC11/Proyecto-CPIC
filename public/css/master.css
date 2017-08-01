@@ -264,12 +264,7 @@ button.btn-personalizada {
     font-size: 190px;
 
     }
-    #el_mas:hover{
-      transform: translate(0,350px);
-    -webkit-transform: translate(0,350px);
-    -o-transform: translate(0,350px); 
-    -moz-transform: translate(0,350px);
-    }
+   
 /*.accordion-group .accordion-heading:after {
         background: #E79925;
     }

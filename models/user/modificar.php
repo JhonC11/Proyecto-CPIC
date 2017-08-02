@@ -42,13 +42,13 @@
 					<label>Dependencia</label>
 					<select  class="form-control"  name="dependencia" placeholder="holi" required>
 						<option value="">--Seleccione una dependencia--</option>
-						<option value="Administración">Administración</option>
+						<option value="Administración">Administrador</option>
 						<option value="Bienestar">Bienestar</option>
 					</select>			
 				</div>
 
 				<div>
-					<input type="submit"><input type="reset">			
+					<!-- <input type="submit"><input type="reset">	 -->		
 				</div>
 
 			</form>

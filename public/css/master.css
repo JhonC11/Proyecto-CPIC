@@ -143,6 +143,7 @@ h4.panel-title{
 }
 .panel-title>a{
   text-decoration: none;
+  color: rgb(0,92,99);
 }
 .panel-title>a:hover{
     color: rgba(0, 91, 130, 0.8);
@@ -255,7 +256,7 @@ button.btn-personalizada {
       border-collapse: 10px;
     }
     .panel-group{
-      font-size: 12px;
+      font-size: 10px;
     }
     #el_mas{
       position: absolute;
@@ -264,6 +265,7 @@ button.btn-personalizada {
     font-size: 190px;
 
     }
+   
    
 /*.accordion-group .accordion-heading:after {
         background: #E79925;

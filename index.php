@@ -13,7 +13,7 @@
 	<!-- navbar -->
 	<nav class="navbar navbar-default navbar-static-top">
 		<div class="da">
-			<img src="public/imgs/encabe1.png" alt="">
+			<img src="public/imgs/encabe1-2.png" alt="">
 		</div>
 		<div class="da">
 			<ul>

@@ -52,9 +52,9 @@
 			<div class="row">
 				<div class="col-md-10 col-md-offset-1">
 					<div class="owl-carousel owl-theme">
+						<div class="item"><a href="#"><img src="public/imgs/sl3.png" alt=""></a></div>
 						<div class="item"><a href="#"><img src="public/imgs/sl1.png" alt=""></a></div>
 						<div class="item"><a href="#"><img src="public/imgs/sl2.png" alt=""></a></div>
-						<div class="item"><a href="#"><img src="public/imgs/sl3.png" alt=""></a></div>
 					</div> 
 				</div>				
 			</div>

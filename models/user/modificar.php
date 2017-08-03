@@ -25,30 +25,31 @@
 			
 		<?php foreach ($datos as $key => $value): ?>
 			<form class="form-group" action="acciones2.php" method="post">
-				<div>
+				<input type="hidden" name="id_usuario" value="<?php echo $id_usuario; ?>">
+				<div class="form-group">
 					<label>Nombre</label>
 					<input  class="form-control" value="<?php echo $value['nombre']; ?>"  type="text" name="nombre" placeholder="Digite su nombre" required>			
 				</div>
-				<div>
+				<div class="form-group">
 					
 				<label>Email</label>
 				<input class="form-control" value="<?php echo $value['email']; ?>"   type="email" name="email" placeholder="Digite su email" required>
 				</div>
-				<div>
+				<div class="form-group">
 					<label>Password</label>
 					<input class="form-control" value="<?php echo $value['password']; ?>"   type="password" name="password" placeholder="Digite su password" required>			
 				</div>
-				<div>
+				<div class="form-group">
 					<label>Dependencia</label>
 					<select  class="form-control"  name="dependencia" placeholder="holi" required>
 						<option value="">--Seleccione una dependencia--</option>
-						<option value="Administración">Administrador</option>
-						<option value="Bienestar">Bienestar</option>
+						<option <?php if ($value['dependencia'] == 'Administración') echo "selected='selected'"; ?> value="">Administrador</option>
+						<option <?php if ($value['dependencia'] == 'Bienestar') echo "selected='selected'"; ?> value="Bienestar">Bienestar</option>
 					</select>			
 				</div>
 
-				<div>
-					<!-- <input type="submit"><input type="reset">	 -->		
+				<div class="form-group">
+					<input type="submit"><input type="reset">		
 				</div>
 
 			</form>

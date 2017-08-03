@@ -15,8 +15,8 @@
 		$objeto->modificar($id, $nombre, $email, $password, $dependencia);
 	} 
 	echo "
-	 // <script>
-		//  	window.location.replace('index.php');	
-		// </script> ";
+	 <script>
+		  	window.location.replace('index.php');	
+		 </script> ";
 
 ?>

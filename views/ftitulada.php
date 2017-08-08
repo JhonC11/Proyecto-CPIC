@@ -14,6 +14,9 @@
 		<div class="da">
 			<img src="../public/imgs/encabe1.png" alt="">
 		</div>
+		<div class="da">	
+			<button class="btn btn-s"><a href="../index.php">Inicio</button></a>
+		</div>
 		<div class="da">
 			<ul>
 				<li class="item1">Programa de formación

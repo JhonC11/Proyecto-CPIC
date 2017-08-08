@@ -15,6 +15,7 @@
 		<div class="da">
 			<img src="public/imgs/encabe1-2.png" alt="">
 		</div>
+
 		<div class="da">
 			<ul>
 				<li class="item1">Programa de formación
@@ -28,6 +29,7 @@
 				</li>
 			</ul>
 		</div>
+
 		<div class="da">
 			<section id="modal">
 				<article>
@@ -36,7 +38,10 @@
 					<form method="POST">
 						<div class="form-group">
 							E-mail
-							<input type="text" class="form-control">
+							<input type="text" class="form-control"><br>
+							Password
+							<input type="password" class="form-control"><br><br>
+							<button class="btn-btn-lg btn-default">Ingresar</button>
 							
 						</div>
 					</form>

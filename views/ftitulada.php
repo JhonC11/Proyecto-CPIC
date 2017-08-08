@@ -12,10 +12,10 @@
 <body>
 	<nav class="navbar navbar-default navbar-static-top">
 		<div class="da">
-			<a href="../index.php"><img src="../public/imgs/encabe1.png"></a>
+			<img src="../public/imgs/encabe1.png" alt="">
 		</div>
 		<div class="da">	
-			<button class="btn btn-s"><a href="../index.php">Inicio</button></a>
+			<button class="inicio"><a class="pola" href="../index.php">Inicio</button></a> 
 		</div>
 		<div class="da">
 			<ul>
@@ -39,8 +39,6 @@
 						<div class="form-group">
 							E-mail
 							<input type="text" class="form-control">
-							Contraseña
-							<input type="text" class="form-control">
 							
 						</div>
 					</form>
@@ -59,9 +57,9 @@
 
 			<div class="col-md-6 panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-					<div class="panel panel-default animated bounceInLeft" >
-						<div class="panel-heading" role="tab" id="headingOne" >
-							<h4 class="panel-title">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title" class="animated bounceInLeft" >
 								<a role="button"  data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 									Tecnologos
 								</a>
@@ -326,9 +324,9 @@
 
 			<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">	
 				<div class="panel panel-default">
-					<div class="panel-heading  animated bounceInRight" role="tab" id="headingOne">
-						<h4 class="panel-title"  >
-							<a role="button" class="animated bounceInRight" data-toggle="collapse" data-parent="#accordion2" href="#collapseDOs" aria-expanded="true" aria-controls="collapseDOs">
+					<div class="panel-heading" role="tab" id="headingOne">
+						<h4 class="panel-title" class="animated bounceInRight" >
+							<a role="button" class="titulos" data-toggle="collapse" data-parent="#accordion2" href="#collapseDOs" aria-expanded="true" aria-controls="collapseDOs">
 								Tecnicos
 							</a>
 						</h4>

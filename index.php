@@ -38,18 +38,14 @@
 					<form method="POST">
 						<div class="form-group">
 							E-mail
-<<<<<<< HEAD
 							<input type="text" class="form-control"><br>
 							Password
 							<input type="password" class="form-control"><br><br>
 							<button class="btn-btn-lg btn-default">Ingresar</button>
-=======
-							<input type="text" class="form-control">
-							Contraseña
-							<input type="text" class="form-control">
->>>>>>> ea2c85b2098f194e55ceda35660299ac10bb5434
 							
-						</div>
+
+							
+						
 					</form>
 					<button class="cerrarmodal"> &times; Cerrar Ventana </button>
 				</article>

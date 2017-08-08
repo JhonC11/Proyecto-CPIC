@@ -1,3 +1,4 @@
+<?php require 'models/user/login.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,16 +34,23 @@
 				<article>
 					<h2>Login</h2>
 
-					<form method="POST">
+					<form method="POST" name="frm_user" id="frm_user" action="models/user/login.php">
 						<div class="form-group">
 							E-mail
-							<input type="text" class="form-control">
+							<input type="email" class="form-control" name="email" placeholder="Correo Electronico">
 							Contraseña
-							<input type="text" class="form-control">
+							<input type="password" class="form-control" name="password" placeholder="Contraseña">
 							
 						</div>
-					</form>
+						Tipo De Usuario
+						<select name="dependencia" id="dependencia">
+							<option value="">seleccionar...</option>
+							<option value="administrador">Administrador</option>
+							<option value="bienestar">Bienestar</option>
+						</select>
+					<button type="submit" class="btn btn-success"> Enviar
 					<button class="cerrarmodal"> &times; Cerrar Ventana </button>
+					</form>
 				</article>
 			</section>
 			<button id="btnOpenModal">Login</button>
@@ -451,7 +459,7 @@
 <!-- Footer -->
 <footer>Todos los derechos reservados</footer>
 
-
+<script src="models/user/login.php"></script>
 <script src="public/js/jquery-3.1.1.js"></script>
 <script src="public/js/owl.carousel.min.js"></script> 
 <script src="public/js/bootstrap.min.js"></script> 

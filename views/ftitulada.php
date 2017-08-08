@@ -32,16 +32,22 @@
 				<article>
 					<h2>Login</h2>
 
-					<form method="POST">
+					<form method="POST" action="login.php" id="frm_user" name="frm_user" >
 						<div class="form-group">
 							E-mail
-							<input type="text" class="form-control">
+							<input type="text" class="form-control" name="email">
 							Contraseña
-							<input type="text" class="form-control">
+							<input type="text" class="form-control" name="password">
 							
 						</div>
+						<select name="dependencia" id="dependencia">
+							<option value="">seleccionar...</option>
+							<option value="administrador">Administrador</option>
+							<option value="bienestar">Bienestar</option>
+						</select>
 					</form>
 					<button class="cerrarmodal"> &times; Cerrar Ventana </button>
+					<input type="submit" value="enviar">
 				</article>
 			</section>
 			<button id="btnOpenModal">Login</button>

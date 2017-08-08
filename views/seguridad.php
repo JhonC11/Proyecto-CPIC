@@ -9,6 +9,7 @@
 //         header('Location: ftitulada.php');
 
 //     }
+<?php require 'login.php'; ?>
 
 
 <?php  if($_SESSION['rol'] == 'administrador'): ?>

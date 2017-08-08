@@ -16,6 +16,7 @@
 		<div class="da">
 			<img src="public/imgs/encabe1-2.png" alt="">
 		</div>
+
 		<div class="da">
 			<ul>
 				<li class="item1">Programa de formación
@@ -29,6 +30,7 @@
 				</li>
 			</ul>
 		</div>
+
 		<div class="da">
 			<section id="modal">
 				<article>
@@ -37,6 +39,7 @@
 					<form method="POST" name="frm_user" id="frm_user" action="models/user/login.php">
 						<div class="form-group">
 							E-mail
+<<<<<<< HEAD
 							<input type="email" class="form-control" name="email" placeholder="Correo Electronico">
 							Contraseña
 							<input type="password" class="form-control" name="password" placeholder="Contraseña">
@@ -49,6 +52,17 @@
 							<option value="bienestar">Bienestar</option>
 						</select>
 					<button type="submit" class="btn btn-success"> Enviar
+=======
+							<input type="text" class="form-control"><br>
+							Password
+							<input type="password" class="form-control"><br><br>
+							<button class="btn-btn-lg btn-default">Ingresar</button>
+							
+
+							
+						
+					</form>
+>>>>>>> 20c4ef5310e94b0556edd7feadcc832155494720
 					<button class="cerrarmodal"> &times; Cerrar Ventana </button>
 					</form>
 				</article>

@@ -194,17 +194,21 @@ button.btn-personalizada {
 }
 /*ventana modal*/
     button#btnOpenModal {
-      background-color: #99adb8;
-      color: #d9f7ff;
-      border: none;
+      background-color: rgba(0, 120, 128, 0.63);
+      color: #000000;
+      border-radius: 10%;
       display: block;
-      font-size: 0.8em;
-      margin: 20px auto;
-      padding: 10px;
-      width: 160px;
+      font-size: 15px;
+      margin: 10px auto;
+      height: 25px;
+      width: 100px;
+      position: relative;
+      left: 780px;
+      font-family: Tahoma;
+
     }
     button#btnOpenModal:hover {
-      background-color: #acc2d0;
+      background-color: rgba(0, 120, 128, 0.63);
       cursor: pointer;
     }
     section#modal {
@@ -214,6 +218,8 @@ button.btn-personalizada {
       left: 0px;
       top: 0px;
       width: 100%;
+      padding: 10px;
+
     }
     section#modal article {
       background-color: #fff;
@@ -265,6 +271,22 @@ button.btn-personalizada {
     font-size: 190px;
 
     }
+    a.pola{
+      color: #000;
+    }
+    button.inicio {
+      position: relative;
+      left: 380px;
+      border: none;
+      background-color: #fff;
+    }
+    a.pola:hover {
+      text-decoration: none;
+      color: #B9BBB0;
+
+
+
+
    
    
 /*.accordion-group .accordion-heading:after {

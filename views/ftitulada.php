@@ -12,7 +12,10 @@
 <body>
 	<nav class="navbar navbar-default navbar-static-top">
 		<div class="da">
-			<a href="../index.php"><img src="../public/imgs/encabe1.png"></a>
+			<img src="../public/imgs/encabe1.png" alt="">
+		</div>
+		<div class="da">	
+			<button class="inicio"><a class="pola" href="../index.php">Inicio</button></a> 
 		</div>
 		<div class="da">
 			<ul>
@@ -35,9 +38,13 @@
 					<form method="POST" action="login.php" id="frm_user" name="frm_user" >
 						<div class="form-group">
 							E-mail
+<<<<<<< HEAD
 							<input type="text" class="form-control" name="email">
 							Contraseña
 							<input type="text" class="form-control" name="password">
+=======
+							<input type="text" class="form-control">
+>>>>>>> 20c4ef5310e94b0556edd7feadcc832155494720
 							
 						</div>
 						<select name="dependencia" id="dependencia">
@@ -62,9 +69,9 @@
 
 			<div class="col-md-6 panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-					<div class="panel panel-default animated bounceInLeft" >
-						<div class="panel-heading" role="tab" id="headingOne" >
-							<h4 class="panel-title">
+					<div class="panel panel-default">
+						<div class="panel-heading" role="tab" id="headingOne">
+							<h4 class="panel-title" class="animated bounceInLeft" >
 								<a role="button"  data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 									Tecnologos
 								</a>
@@ -329,9 +336,9 @@
 
 			<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">	
 				<div class="panel panel-default">
-					<div class="panel-heading  animated bounceInRight" role="tab" id="headingOne">
-						<h4 class="panel-title"  >
-							<a role="button" class="animated bounceInRight" data-toggle="collapse" data-parent="#accordion2" href="#collapseDOs" aria-expanded="true" aria-controls="collapseDOs">
+					<div class="panel-heading" role="tab" id="headingOne">
+						<h4 class="panel-title" class="animated bounceInRight" >
+							<a role="button" class="titulos" data-toggle="collapse" data-parent="#accordion2" href="#collapseDOs" aria-expanded="true" aria-controls="collapseDOs">
 								Tecnicos
 							</a>
 						</h4>

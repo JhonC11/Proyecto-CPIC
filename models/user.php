@@ -22,7 +22,7 @@
 		public function insertar($nombre, $email, $password, $dependencia){
 			$stmt = $this->mysqli->query("INSERT INTO usuarios VALUES('', '$nombre','$email','$password','$dependencia')");
 		}
-		public function modificar($id, $nombre, $email, $password, $clase){
+		public function modificar($id, $nombre, $email, $password, $dependencia){
 			$stmt = $this->mysqli->query("UPDATE usuarios SET nombre = '$nombre', email = '$email',password = '$password', dependencia = '$dependencia' WHERE id_usuario = '$id'");
 		}		
 		public function eliminar($id){

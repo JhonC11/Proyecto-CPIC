@@ -32,7 +32,7 @@
 					<label>clase</label>
 					<select  class="form-control"  name="dependencia" placeholder="holi" required>
 						<option value="">--Seleccione una dependencia--</option>
-						<option value="Administración">Administración</option>
+						<option value="Administrador">Administrador</option>
 						<option value="Bienestar">Bienestar</option>
 					</select>			
 				</div>

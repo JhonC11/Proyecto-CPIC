@@ -7,6 +7,19 @@
  	<meta charset="UTF-8">
  	<title>Añadir imagen</title>
  	<link rel="stylesheet" href="../../public/css/bootstrap.min.css">
+ 	<style>
+ 		img{
+ 			width: 200px;
+ 			height: 200px;
+ 			margin-bottom: 10px;
+ 		}
+ 		button.elim{
+			color: red;
+			position: absolute;
+			background-color: rgba(255, 255, 255, 0.4);
+			right: 3px;
+ 		}
+ 	</style>
  </head>
  <body>
 	<form method="post" enctype="multipart/form-data" id="frm" class=" text-center">
@@ -35,17 +48,21 @@
                     }
 
 
+
 				}
 				$objeto = new image();
                 $fotos = $objeto->listarI();
 
 			 ?>
-<div style="display: flex; flex-wrap: wrap;">
+		<div class="col-md-8 col-md-offset-2">
 			<?php foreach ($fotos as $key => $foto): ?>
-				<img src="../../public/imgs/bienestar/<?php echo $foto['imagen']; ?>" alt="Foto<?php echo $foto['id']; ?>"> 				
+			<div id="imgs" class="col-md-3">
+				<button class="btn btn-default elim btn-delete-img" data-id="<?php echo $foto['id_image']; ?>"><i class="glyphicon glyphicon-remove"></i> </button>
+
+				<img src="../../public/imgs/bienestar/<?php echo $foto['imagen']; ?>"> 				
+			</div>
 			<?php endforeach ?>			
-</div>
-	
+		</div>	
 
 
  <script src="../../public/js/jquery-3.1.1.js"></script>
@@ -57,6 +74,15 @@
 	        $('.btn-upload').click(function() {
 	            $('#upload').click();
 	        });
+
+	        $('.btn-delete-img').click(function(event) {
+	          if (confirm('Realmente desea eliminar esta imágen?')) {
+	            $id = $(this).attr('data-id');
+	            window.location.replace('eliminar.php?id='+$id);
+	          }
+	        });
+
+
         });
 </script>
  </body>

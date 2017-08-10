@@ -15,6 +15,9 @@
 			$stmt = $this->mysqli->query("INSERT INTO images VALUES(DEFAULT, '$imagen')");
 
 		}
+		public function eliminar($id){
+			$stmt = $this->mysqli->query("DELETE FROM images WHERE id_image = '$id'");
+		}
 	}
 
  ?>

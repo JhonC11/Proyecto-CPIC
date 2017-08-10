@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="public/css/bootstrap.min.css">
 	<link rel="stylesheet" href="public/css/master.css">
 	<link rel="stylesheet" href="public/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="public/css/images-grid.css">
+	<link rel="stylesheet" href="public/css/gallery.css">
 
 </head>
 <body>
@@ -444,26 +444,59 @@
 
 				</div>
 </section>
-
-<section class="galeria">
-	<div class="container-fluid galeria">
-		<div id="gallery"></div>								
+	<section class="galeria">
+	<div class="container-gallery">
+		<img src="public/imgs/bienestar/032-2014-19-MelÃ³dica-NotasTeclado.jpg" alt="">
+		<img src="public/imgs/bienestar/14962773_583713631813941_9008235928232615140_n.jpg" alt="">
+		<img src="public/imgs/bienestar/17457777_1487054597993953_7278943542758865879_n.jpg" alt="">
+		<img src="public/imgs/bienestar/18486209_1557457784286967_1672427826755756098_n.jpg" alt="">
+		<img src="public/imgs/bienestar/20139672_1449624228463314_1747501999493690269_n.jpg" alt="">
+		<img src="public/imgs/bienestar/032-2014-19-MelÃ³dica-NotasTeclado.jpg" alt="">
+		<img src="public/imgs/bienestar/14962773_583713631813941_9008235928232615140_n.jpg" alt="">
+		<img src="public/imgs/bienestar/18486209_1557457784286967_1672427826755756098_n.jpg" alt="">
 		
 	</div>
 </section>
 
 
+
 <!-- Footer -->
 <footer>Todos los derechos reservados</footer>
-
-<script src="models/user/login.php"></script>
 <script src="public/js/jquery-3.1.1.js"></script>
 <script src="public/js/owl.carousel.min.js"></script> 
 <script src="public/js/bootstrap.min.js"></script> 
-<script src="public/js/images-grid.js"></script>
 <script src="public/js/carousel.js"></script> 
 <script src="public/js/gallery.js"></script> 
 <script src="public/js/login.js"></script>
+<script>
+
+		$('.container-gallery').gallery({
+			height: 750,
+			items: 10,
+			480: {
+				items: 2,
+				height: 400,
+				thmbHeight: 100
+			},
+			768: {
+				
+				items: 3,
+				height: 500,
+				thmbHeight: 120
+			},
+			600: {
+				
+				items: 4
+			},
+			992 : {
+				
+				items: 5,
+				height: 350
+			}
+
+		});
+
+	</script>
 
 
 

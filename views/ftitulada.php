@@ -36,17 +36,7 @@
 					<h2>Login</h2>
 
 					<form method="POST" action="login.php" id="frm_user" name="frm_user" >
-						<div class="form-group">
-							E-mail
-<<<<<<< HEAD
-							<input type="text" class="form-control" name="email">
-							Contraseña
-							<input type="text" class="form-control" name="password">
-=======
-							<input type="text" class="form-control">
->>>>>>> 20c4ef5310e94b0556edd7feadcc832155494720
-							
-						</div>
+	
 						<select name="dependencia" id="dependencia">
 							<option value="">seleccionar...</option>
 							<option value="administrador">Administrador</option>

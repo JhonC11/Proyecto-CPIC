@@ -28,16 +28,16 @@ div.da{
     height: 25px;
     width: 100px;
 }
-.glyphicon.glyphicon-chevron-left, .glyphicon.glyphicon-chevron-right{
+.galeriaprev, .galerianext{
   color: #ACACAC;
   font-size: 4em; 
   position: absolute;
 }
-.glyphicon.glyphicon-chevron-left{
+.galeriaprev{
  left: -50px;
  top: 35%;
 }
-.glyphicon.glyphicon-chevron-right{
+.galerianext{
 right: -50px;
 top: 35%;
 }

@@ -44,15 +44,61 @@
 							<input type="password" name="password" class="form-control"><br><br>
 							<button class="btn-btn-lg btn-default">Ingresar</button>
 
-					</form>
+							<button class="cerrarmodal"> &times; Cerrar Ventana </button>
+						</div>
 
-					<button class="cerrarmodal"> &times; Cerrar Ventana </button>
-					</form>
+						</form>
 				</article>
 			</section>
 			<button id="btnOpenModal">Login</button>
 		</div>
-	</nav>
+
+			<div class="da">
+				<section id="modal2">
+					<article class="vent2">
+						<h2>Registro</h2>
+
+						<form method="POST" name="frm_user" id="frm_user" action="models/user/registro.php">
+							<div class="form-group">
+								Nombre
+								<input type="text" name="name" class="form-control">
+
+								Apellido
+								<input type="text" name="last_name" class="form-control">
+
+								Edad
+								<input type="number" name="year" class="form-control">
+
+								Telefono
+								<input type="number" name="phone" class="form-control">
+
+								Dependencia
+								<select  class="form-control"  name="dependencia" placeholder="Dependencia" required>
+									<option value="">--Seleccione una dependencia--</option>
+									<option value="Administrador">Administrador</option>
+									<option value="Bienestar">Bienestar</option>
+								</select>
+
+								E-mail
+								<input type="text" name="email" class="form-control">
+								
+								Password
+								<input type="password" name="password" class="form-control">
+
+								<button class="btn-btn-lg btn-default">Registrar</button>
+
+
+
+								<button class="cerrarmodal2"> &times; Cerrar Ventana </button>
+							</div>
+						</form>
+					</article>
+				</section>
+				<button id="btnOpenModal2">Registrar</button>
+			</div>
+			</nav>
+
+
 	<!-- Slider -->
 	<section class="slider">
 		<div class="container-fluid">

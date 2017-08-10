@@ -1,11 +1,15 @@
 html{
-	margin: 0px auto; 
+	margin: 0px auto !important; 
 }
 nav.navbar{
 	background-color: #fff;
+  margin: 0px auto !important; 
+
 }
 div.da{
 	display: inline-block;
+  margin: 0px auto !important; 
+
 }
 
 
@@ -203,7 +207,7 @@ button.btn-personalizada {
       height: 25px;
       width: 100px;
       position: relative;
-      left: 780px;
+      left: 700px;
       font-family: Tahoma;
 
     }
@@ -248,6 +252,65 @@ button.btn-personalizada {
       padding: 10px;
     }
     section#modal article button:hover {
+      background-color: #a43749;
+      cursor: pointer;
+    }
+
+/*Ventana modal registro*/    
+    button#btnOpenModal2 {
+      background-color: rgba(0, 120, 128, 0.63);
+      color: #000000;
+      border-radius: 10%;
+      font-size: 15px;
+      margin: 10px auto;
+      height: 25px;
+      width: 100px;
+      position: relative;
+      left: 700px;
+      font-family: Tahoma;
+
+    }
+    button#btnOpenModal2:hover {
+      background-color: rgba(0, 120, 128, 0.63);
+      cursor: pointer;
+    }
+    section#modal2 {
+      background-color: rgba(0,0,0,.7);
+      height: 100%;
+      position: fixed;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      padding: 10px;
+
+    }
+    section#modal2 article {
+      background-color: #fff;
+      box-shadow: 0px 0px 12px 2px #000;
+      color: #6a7880;
+      margin: 15% auto;
+      padding: 20px;
+      position: relative;
+      top: -1000px;
+      width: 60%;
+    }
+    section#modal2 article h2 {
+      text-align: center;
+      text-transform: uppercase;
+    }
+    section#modal2 article p {
+      text-align: justify;
+    }
+    section#modal2 article button {
+      background-color: #802b39;
+      color: #fff;
+      display: block;
+      border: none;
+      font-size: 0.8em;
+      margin: 10px auto;
+      padding: 10px;
+    }
+    section#modal2 article button:hover {
       background-color: #a43749;
       cursor: pointer;
     }

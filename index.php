@@ -58,19 +58,20 @@
 					<article class="vent2">
 						<h2>Registro</h2>
 
-						<form method="POST" name="frm_user" id="frm_user" action="models/user/registro.php">
+						<form method="POST" name="frm_user" id="frm_user" action="models/user/acciones.php">
 							<div class="form-group">
-								Nombre
-								<input type="text" name="name" class="form-control">
+								Nombres
+								<input type="text" name="nombres" class="form-control" required>
 
-								Apellido
-								<input type="text" name="last_name" class="form-control">
+								Apellidos
+								<input type="text" name="apellidos" class="form-control" required>
 
-								Edad
-								<input type="number" name="year" class="form-control">
 
-								Telefono
-								<input type="number" name="phone" class="form-control">
+								Correo electronico
+								<input type="text" name="email" class="form-control" required>
+								
+								Contraseña
+								<input type="password" name="password" class="form-control" required>
 
 								Dependencia
 								<select  class="form-control"  name="dependencia" placeholder="Dependencia" required>
@@ -78,13 +79,6 @@
 									<option value="Administrador">Administrador</option>
 									<option value="Bienestar">Bienestar</option>
 								</select>
-
-								E-mail
-								<input type="text" name="email" class="form-control">
-								
-								Password
-								<input type="password" name="password" class="form-control">
-
 								<button class="btn-btn-lg btn-default">Registrar</button>
 
 

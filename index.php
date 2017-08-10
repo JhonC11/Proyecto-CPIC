@@ -42,9 +42,9 @@
 					<form method="POST" name="frm_user" id="frm_user" action="models/user/login.php">
 						<div class="form-group">
 							E-mail
-							<input type="text" class="form-control"><br>
+							<input type="text" name="email" class="form-control"><br>
 							Password
-							<input type="password" class="form-control"><br><br>
+							<input type="password" name="password" class="form-control"><br><br>
 							<button class="btn-btn-lg btn-default">Ingresar</button>
 
 					</form>

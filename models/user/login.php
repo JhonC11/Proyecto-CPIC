@@ -6,6 +6,9 @@
 ?>
 
 <?php 
+if ($_POST) {
+ 
+
   $email   = $_POST["email"];
   $password = $_POST["password"];
    
@@ -23,4 +26,5 @@
       /* terminamos la ejecución ya que si redireccionamos ya no nos interesa 
       seguir ejecutando código de este archivo */
       exit(); 
+  }
   

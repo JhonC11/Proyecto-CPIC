@@ -6,13 +6,14 @@
 	if($_POST){
 
 		$id       = $_POST['id_usuario'];
-		$nombre   = $_POST['nombre'];
+		$nombres   = $_POST['nombres'];
+		$apellidos   = $_POST['apellidos'];
 		$email    = $_POST['email'];
 		$password = $_POST['password'];
 		$dependencia    = $_POST['dependencia'];
 
 		$objeto = new user();
-		$objeto->modificar($id, $nombre, $email, $password, $dependencia);
+		$objeto->modificar($id, $nombres, $apellidos, $email, $password, $dependencia);
 	} 
 	echo "
 	 <script>

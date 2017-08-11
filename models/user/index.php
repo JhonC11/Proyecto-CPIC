@@ -60,7 +60,7 @@ include '../load.php';
 					</tr>
 					<?php foreach ($objetos as $key => $value): ?>
 						<tr>
-							<td><?php echo $value['nombre'];?></td>
+							<td><?php echo $value['nombres'];?></td>
 							<td><?php echo $value['dependencia'];?></td>
 							<td>
 								<a class="btn btn-default" href="consultar.php?id=<?php echo $value['id_usuario']?>"><i class="glyphicon glyphicon-search"></i></a>

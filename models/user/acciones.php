@@ -4,13 +4,14 @@
 
 	if($_POST){
 
-		$nombre   = $_POST['nombre'];
+		$nombres   = $_POST['nombres'];
+		$apellidos   = $_POST['apellidos'];
 		$email    = $_POST['email'];
 		$password = $_POST['password'];
 		$dependencia    = $_POST['dependencia'];
 
 		$objeto = new user();
-		$objeto->insertar($nombre, $email, $password, $dependencia);
+		$objeto->insertar($nombres, $apellidos, $email, $password, $dependencia);
 	} 
 
 		echo "

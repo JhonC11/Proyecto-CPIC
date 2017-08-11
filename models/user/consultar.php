@@ -17,13 +17,15 @@
 <table border="1">
 	<tr>
 		<td>ID</td>
-		<td>Nombre</td>
+		<td>Nombres</td>
+		<td>Apellidos</td>
 		<td>Email</td>
 		<td>Dependencia</td>
 	</tr>
 	<tr>
 		<td><?php echo $value['id_usuario']; ?></td>
-		<td><?php echo $value['nombre']; ?></td>
+		<td><?php echo $value['nombres']; ?></td>
+		<td><?php echo $value['apellidos']; ?></td>
 		<td><?php echo $value['email']; ?></td>
 		<td><?php echo $value['dependencia']; ?></td>
 	</tr>

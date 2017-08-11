@@ -3,10 +3,8 @@
 
 
 	$conx = Database::Conexion();
-?>
 
-<?php 
-if ($_POST) {
+
   
 function login($conx, $email, $password) {
     try {
@@ -15,14 +13,14 @@ function login($conx, $email, $password) {
           WHERE email = :email
           AND password = :password
           LIMIT 1";
-      $stm = $con->prepare($sql);
+      $stm = $conx->prepare($sql);
       $stm->bindparam(':email', $email);
       $stm->bindparam(':password', $password);
       $stm->execute();
       if($stm->rowCount() > 0) {
         $urow = $stm->fetch(PDO::FETCH_ASSOC);
-        $_SESSION['uid_usuario']      = $urow['id_usuario'];
-        $_SESSION['unombre'] =  $urow['nombre'];
+        $_SESSION['uid_usuario']      =  $urow['id_usuario'];
+        $_SESSION['unombre']          =  $urow['nombre'];
         $_SESSION['udependencia']     =  $urow['dependencia'];
         return true;
       } else {
@@ -32,6 +30,6 @@ function login($conx, $email, $password) {
       echo $e->getMessage();
     }
   }
-}
-  }
+
+
   

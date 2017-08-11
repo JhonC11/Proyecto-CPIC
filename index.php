@@ -1,3 +1,5 @@
+<?php include('models/user/login.php') ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -43,9 +45,9 @@
 
 			  			if(login($conx, $email, $password)) {
 			  				if($_SESSION['dependencia'] == 'administrador') {
-			  					echo "<script>window.location.replace('administrador.php');</script>";
+			  					echo "<script>window.location.replace('views/admin/administrador.php');</script>";
 			  				} else if($_SESSION['dependencia'] == 'bienestar') {
-			  					echo "<script>window.location.replace('bienestar.php');</script>";
+			  					echo "<script>window.location.replace('views/bienestar/bienestar.php');</script>";
 			  				}
 			  			} else {
 			  				echo '<div class="alert alert-danger">
@@ -61,7 +63,7 @@
 						$conx = null;
 			  		}
 				?>
-					<form method="POST" name="frm_user" id="frm_user" action="login">
+					<form method="POST" name="frm_user" id="frm_user" action="">
 						<div class="form-group">
 							E-mail
 							<input type="text" name="email" class="form-control">
@@ -69,8 +71,8 @@
 							<input type="password" name="password" class="form-control">
 							
 							
-							<input type="hidden" name="login" value="ingreso">
-							<button class="btn-btn-lg btn-default">Ingresar</button>
+							
+							<button type="submit" class="btn-btn-lg btn-default">Ingresar</button>
 						</div>
 					<button class="cerrarmodal"> &times; Cerrar Ventana </button>
 
@@ -510,7 +512,7 @@
 <!-- Footer -->
 <footer>Todos los derechos reservados</footer>
 
-<script src="models/user/login.php"></script>
+
 <script src="public/js/jquery-3.1.1.js"></script>
 <script src="public/js/owl.carousel.min.js"></script> 
 <script src="public/js/bootstrap.min.js"></script> 

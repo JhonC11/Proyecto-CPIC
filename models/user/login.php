@@ -7,24 +7,31 @@
 
 <?php 
 if ($_POST) {
- 
-
-  $email   = $_POST["email"];
-  $password = $_POST["password"];
-   
-  /* Realizamos una consulta por cada tabla para buscar en que tabla se encuentra 
-  el usuario que está intentando acceder */
-  $administrador = mysqli_query($conx, "SELECT * FROM usuarios WHERE email = '$email' AND password = '$password' AND dependencia = 'Administrador'");
-  $bienestar = mysqli_query($conx, "SELECT * FROM usuarios WHERE email = '$email' AND password = '$password' AND dependencia = 'Bienestar'");
-
-		 $_SESSION['Administrador'] = "$email";
-   
-      /* Nos dirigimos al espacio de los administradors usando header que nos 
-      redireccionará a la página que le indiquemos */
-      // header("Location: index.php");
-   
-      /* terminamos la ejecución ya que si redireccionamos ya no nos interesa 
-      seguir ejecutando código de este archivo */
-      exit(); 
+  
+function login($conx, $email, $password) {
+    try {
+      $sql = "SELECT *
+          FROM usuarios
+          WHERE email = :email
+          AND password = :password
+          LIMIT 1";
+      $stm = $con->prepare($sql);
+      $stm->bindparam(':email', $email);
+      $stm->bindparam(':password', $password);
+      $stm->execute();
+      if($stm->rowCount() > 0) {
+        $urow = $stm->fetch(PDO::FETCH_ASSOC);
+        $_SESSION['uid_usuario']      = $urow['id_usuario'];
+        $_SESSION['unombre'] =  $urow['nombre'];
+        $_SESSION['udependencia']     =  $urow['dependencia'];
+        return true;
+      } else {
+        return false;
+      } 
+    } catch (PDOException $e) {
+      echo $e->getMessage();
+    }
+  }
+}
   }
   

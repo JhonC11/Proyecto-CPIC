@@ -1,4 +1,4 @@
-<?php require 'models/user/login.php' ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="public/css/bootstrap.min.css">
 	<link rel="stylesheet" href="public/css/master.css">
 	<link rel="stylesheet" href="public/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="public/css/gallery.css">
+	<link rel="stylesheet" href="public/css/images-grid.css">
 
 </head>
 <body>
@@ -16,7 +16,8 @@
 		<div class="da">
 			<img src="public/imgs/encabe1-2.png" alt="">
 		</div>
-
+		<div class="da">	
+			<button class="inicio"><a class="pola" href="../index.php">Inicio</button></a> 
 		<div class="da">
 			<ul>
 				<li class="item1">Programa de formación
@@ -35,64 +36,77 @@
 			<section id="modal">
 				<article>
 					<h2>Login</h2>
+					<?php 
+			  		if($_SERVER['REQUEST_METHOD'] == 'POST') {
+			  			$email = $_POST['email'];
+			  			$password  = md5($_POST['password']);
 
-					<form method="POST" name="frm_user" id="frm_user" action="models/user/login.php">
+			  			if(login($conx, $email, $password)) {
+			  				if($_SESSION['dependencia'] == 'administrador') {
+			  					echo "<script>window.location.replace('administrador.php');</script>";
+			  				} else if($_SESSION['dependencia'] == 'bienestar') {
+			  					echo "<script>window.location.replace('bienestar.php');</script>";
+			  				}
+			  			} else {
+			  				echo '<div class="alert alert-danger">
+									  <div class="alert-icon">
+									    <i class="material-icons">error_outline</i>
+									  </div>
+									  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+										<span aria-hidden="true"><i class="material-icons">clear</i></span>
+									  </button>
+								      <b>Error:</b> Datos Incorrectos...
+								</div>';
+			  			}
+						$conx = null;
+			  		}
+				?>
+					<form method="POST" name="frm_user" id="frm_user" action="login">
 						<div class="form-group">
 							E-mail
-							<input type="text" name="email" class="form-control"><br>
+							<input type="text" name="email" class="form-control">
 							Password
-							<input type="password" name="password" class="form-control"><br><br>
+							<input type="password" name="password" class="form-control">
+							
+							
+							<input type="hidden" name="login" value="ingreso">
 							<button class="btn-btn-lg btn-default">Ingresar</button>
-
-							<button class="cerrarmodal"> &times; Cerrar Ventana </button>
 						</div>
+					<button class="cerrarmodal"> &times; Cerrar Ventana </button>
 
-						</form>
+					</form>
 				</article>
 			</section>
 			<button id="btnOpenModal">Login</button>
 		</div>
+		<!-- <div class="da">
+			<section id="modal">
+				<article>
+					<h2>Login</h2>
 
-			<div class="da">
-				<section id="modal2">
-					<article class="vent2">
-						<h2>Registro</h2>
+					<form method="POST" name="frm_user" id="frm_user" action="login">
+						<div class="form-group">
+							E-mail
+							<input type="text" name="email" class="form-control">
+							Password
+							<input type="password" name="password" class="form-control">
+							
+							<select name="dependencia" id="dependencia">
+								<option value="">seleccionar.. </option>
+								<option value="administrador">administrador</option>
+								<option value="bienes"> Personal de bienestar</option>
+							</select>
+							<input type="hidden" name="login" value="ingreso">
+							<button class="btn-btn-lg btn-default">Ingresar</button>
+						</div>
+					<button class="cerrarmodal"> &times; Cerrar Ventana </button>
 
-						<form method="POST" name="frm_user" id="frm_user" action="models/user/acciones.php">
-							<div class="form-group">
-								Nombres
-								<input type="text" name="nombres" class="form-control" required>
-
-								Apellidos
-								<input type="text" name="apellidos" class="form-control" required>
-
-
-								Correo electronico
-								<input type="text" name="email" class="form-control" required>
-								
-								Contraseña
-								<input type="password" name="password" class="form-control" required>
-
-								Dependencia
-								<select  class="form-control"  name="dependencia" placeholder="Dependencia" required>
-									<option value="">--Seleccione una dependencia--</option>
-									<option value="Administrador">Administrador</option>
-									<option value="Bienestar">Bienestar</option>
-								</select>
-								<button class="btn-btn-lg btn-default">Registrar</button>
-
-
-
-								<button class="cerrarmodal2"> &times; Cerrar Ventana </button>
-							</div>
-						</form>
-					</article>
-				</section>
-				<button id="btnOpenModal2">Registrar</button>
-			</div>
-			</nav>
-
-
+					</form>
+				</article>
+			</section>
+			<button id="btnOpenModal">Registro</button>
+		</div> -->
+	</nav>
 	<!-- Slider -->
 	<section class="slider">
 		<div class="container-fluid">
@@ -484,59 +498,26 @@
 
 				</div>
 </section>
-	<section class="galeria">
-	<div class="container-gallery">
-		<img src="public/imgs/bienestar/032-2014-19-MelÃ³dica-NotasTeclado.jpg" alt="">
-		<img src="public/imgs/bienestar/14962773_583713631813941_9008235928232615140_n.jpg" alt="">
-		<img src="public/imgs/bienestar/17457777_1487054597993953_7278943542758865879_n.jpg" alt="">
-		<img src="public/imgs/bienestar/18486209_1557457784286967_1672427826755756098_n.jpg" alt="">
-		<img src="public/imgs/bienestar/20139672_1449624228463314_1747501999493690269_n.jpg" alt="">
-		<img src="public/imgs/bienestar/032-2014-19-MelÃ³dica-NotasTeclado.jpg" alt="">
-		<img src="public/imgs/bienestar/14962773_583713631813941_9008235928232615140_n.jpg" alt="">
-		<img src="public/imgs/bienestar/18486209_1557457784286967_1672427826755756098_n.jpg" alt="">
+
+<section class="galeria">
+	<div class="container-fluid galeria">
+		<div id="gallery"></div>								
 		
 	</div>
 </section>
 
 
-
 <!-- Footer -->
 <footer>Todos los derechos reservados</footer>
+
+<script src="models/user/login.php"></script>
 <script src="public/js/jquery-3.1.1.js"></script>
 <script src="public/js/owl.carousel.min.js"></script> 
 <script src="public/js/bootstrap.min.js"></script> 
+<script src="public/js/images-grid.js"></script>
 <script src="public/js/carousel.js"></script> 
 <script src="public/js/gallery.js"></script> 
 <script src="public/js/login.js"></script>
-<script>
-
-		$('.container-gallery').gallery({
-			height: 750,
-			items: 10,
-			480: {
-				items: 2,
-				height: 400,
-				thmbHeight: 100
-			},
-			768: {
-				
-				items: 3,
-				height: 500,
-				thmbHeight: 120
-			},
-			600: {
-				
-				items: 4
-			},
-			992 : {
-				
-				items: 5,
-				height: 350
-			}
-
-		});
-
-	</script>
 
 
 

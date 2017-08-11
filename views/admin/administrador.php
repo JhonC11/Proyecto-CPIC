@@ -39,7 +39,7 @@
 
             <div class="navbar-default sidebar" role="navigation">
                     <div class="sidebar-nav navbar-collapse">
-                    <img src="../imagenes/luna.jpg" alt="">
+                    <img src="../../public/imgs/2.jpg" alt="">
                     <br>
                     <br>
                     <ul class="nav in text-center" id="side-menu">
